@@ -27,7 +27,11 @@ W tym repozytorium znajduje się projekt schematu ideowego, obwodu drukowanego (
 5. **Pętla decyzyjna:** Wyjście proste $Q$ steruje wejściem zerowania ($RESET$) Timera 2, decydując o zakończeniu lub wydłużeniu cyklu odstraszania.
 6. **Stopień mocy:** Wyjście zanegowane $\overline{Q}$ steruje bramką tranzystora P-MOSFET, który załącza napięcie zasilania dla płytki generacji dźwięku.
 
-**Efekt końcowy:** Urządzenie załącza się w nieprzewidywalnych odstępach czasu będących losową wielokrotnością 5 minut (np. 5, 10, 15 min...) na losowy czas trwania będący wielokrotnością 10 sekund (np. 10, 20, 30 s...), co redukuję adaptację ptaków do sygnału.
+**Efekt końcowy:** Urządzenie załącza się w nieprzewidywalnych odstępach czasu będących losową wielokrotnością 5 minut (np. 5, 10, 15 min...) na losowy czas trwania będący wielokrotnością 10 sekund (np. 10, 20, 30 s...), co redukuję adaptację ptaków do sygnału. 
+
+(***W demonstracji oraz symulacji okresy pracy były zredukowane do ~20 sekund oraz ~5 sekund w celu ulatwienia demonstracji***)
+
+![SchematIdeowy](docs/Controller.png)
 
 ---
 
@@ -40,13 +44,13 @@ W tym repozytorium znajduje się projekt schematu ideowego, obwodu drukowanego (
 Obudowa przystosowana do druku 3D z komorą na ogniwa oraz uchwytami montażowymi na drzewa:
 ![Projekt obudowy w FreeCAD](docs/FreeCAD.png)
 
-### Zmontowany prototyp
-![Zmontowane urządzenie](docs/Prototype.png)
-
 ### Demonstracja wideo
-*(Tutaj wstaw link do YouTube/wideo lub plik GIF prezentujący działanie prototypu)*
+[Link](https://www.youtube.com/watch?v=rtPFrEMRT7Q)
 
-| ![](docs/1.png) | ![](docs/2.png) |
+### Zmontowany prototyp
+| ![](docs/1.jpg) | ![](docs/2.jpg) |
 |--|--|
-|![](docs/3.png)  | ![](docs/4.png) |
+|![](docs/3.jpg)  | ![](docs/4.jpg) |
+
+
 
