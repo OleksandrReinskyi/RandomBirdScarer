@@ -57,12 +57,12 @@ Urządzenie załącza się w nieprzewidywalnych odstępach czasu będących wiel
 
 ## 3. Problemy i napotkane trudności 
 
-Zidentyfikowane problemy:
+### Zidentyfikowane problemy:
 * Brak hermetyczności obudowy. Wykonano ją z plastiku niskiej jakości i pozbawiono dedykowanych uszczelek.
 * Ograniczony czas pracy. Zgodnie z obliczeniami urządzenie może pracować maksymalnie do 3 dni, po czym akumulatory wymagają ponownego naładowania. Również  brakuje modułu kontroli ładowania  (3S BMS)
 
 
-Napotkane trudności:
+### Napotkane trudności:
 #### 1. Symulacja 
 * Najpierw prowadziłem symulację stosując idealne modele elementów, co dawało wyniki niezgodne z rzeczywistością. Zamieniłem je na modele wybranych komponentów dla LTSpice.
 * Najpierw nie stosowałem kondensatorów odsprzęgających i dlatego wzmacniacz ciągle wchodził w nasycenie. 
