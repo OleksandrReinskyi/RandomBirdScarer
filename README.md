@@ -1,18 +1,18 @@
 
 # Autonomiczny Stochastyczny Odstraszacz Ptaków
 
-## 1. Założenia i Architektura Systemu
+## 1. Opis zasady działania
 
 **Cel:** Urządzenie zostało zaprojektowane do ochrony upraw w sadach orzechowych przed ptakami. Konstrukcja eliminuje zjawisko przyzwyczajania się szkodników do powtarzalnego dźwięku dzięki zastosowaniu losowości.
 
 System składa się z trzech głównych modułów:
 1. **Moduł zasilania:** Pakiet 3 ogniw Li-Ion 3.7V
 2. **Płytka stochastycznego kontrolera:** Układ analogowo-cyfrowy generujący losowe interwały załączania płytki generatora dźwięku.
-3. **Płytka generatora dźwięku:** Układ wytwarzający falę prostokątną o częstotliwości 2,1–2,9 kHz na glośniku
+3. **Płytka generatora dźwięku:** Układ wytwarzający falę prostokątną o częstotliwości 2,1–2,9 kHz, która trafia na glośnik.
 
 ![Schemat blokowy systemu](docs/BlockDiagram.png)
 
-W tym repozytorium znajduje się projekt schematu ideowego, obwodu drukowanego (KiCad) oraz dokumentacja płytki stochastycznego kontrolera.
+W tym repozytorium znajduje się projekt płytki stochastycznego kontrolera.
 
 ---
 
@@ -26,7 +26,8 @@ W tym repozytorium znajduje się projekt schematu ideowego, obwodu drukowanego (
 5. Wyjście proste $Q$ steruje wejściem zerowania ($RESET$) Timera 2, decydując o zakończeniu lub wydłużeniu cyklu odstraszania.
 6. Wyjście zanegowane $\overline{Q}$ steruje bramką tranzystora P-MOSFET, który załącza napięcie zasilania dla płytki generacji dźwięku.
 
-Urządzenie załącza się w nieprzewidywalnych odstępach czasu będących losową wielokrotnością 5 minut (np. 5, 10, 15 min...) na losowy czas trwania będący wielokrotnością 10 sekund (np. 10, 20, 30 s...), co redukuję adaptację ptaków do sygnału. 
+Urządzenie załącza się w nieprzewidywalnych odstępach czasu będących wielokrotnością 5 minut (np. 5, 10, 15 min...) na losowy czas trwania będący wielokrotnością 10 sekund (np. 10, 20, 30 s...), co redukuję adaptację ptaków do sygnału. 
+
 
 
 > **Uwaga:** Na potrzeby symulacji w LTspice oraz demonstracji wideo, wartości elementów $RC$ w generatorach czasowych zostały przeskalowane w dół, redukując okresy do odpowiednio **~20 s** (zamiast 5 min) oraz **~5 s** (zamiast 10 s)
@@ -35,7 +36,7 @@ Urządzenie załącza się w nieprzewidywalnych odstępach czasu będących loso
 
 ---
 
-## 2. Realizacja Sprzętowa i Weryfikacja
+## 2. Realizacja
 
 ### Wyniki symulacji (LTspice)
 ![Symulacja układu w LTspice](docs/Simulation.png)
