@@ -70,7 +70,7 @@ Urządzenie załącza się w nieprzewidywalnych odstępach czasu będących wiel
 * Jako PMOS użyłem najpierw symbolu o kolejności pinów DGS, a footprintu o kolejności pinów GDS, co spowodowało, że sygnał sterujący pojawiał się na Drain zamiast Gate.
 * Nie zauważyłem, że LM393 ma otwarty kolektor i dlatego na wejściu Data HEF4013B zawsze było 0V.
 * Na dolnej stronie płytki użyłem sterf wypełnionych miedzią jako węzłów dla +12v oraz GND. To sprawiło, że lutowanie lutownicą o małej mocy stało się niemożliwe, bo lut zastygał natychmiastowo.
-![](docs/miedz.jpg)
+![](docs/miedz.png)
 #### 3. Testowanie
 * TL072 niedostatecznie wzmacniał sygnał z diody Zenera i dlatego komparator nie reagował na niego. Zwiększyłem wartości rezystorów, żeby wzmocnienie wynosiło około 500.
 * Zauważyłem, że NE555 mocno się grzeją. Okazało się, że rezystory niedostatecznie ograniczały prąd płynący przez kondensator i dlatego tranzystor na pinie Discharge ciągle ulegał uszkodzeniu.    
