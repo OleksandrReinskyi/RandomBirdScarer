@@ -44,7 +44,6 @@ Urządzenie załącza się w nieprzewidywalnych odstępach czasu będących wiel
 ![Symulacja układu w LTspice](docs/Simulation.png)
 
 ### Obudowa (FreeCAD)
-Obudowa z komorą na ogniwa oraz uchwytami montażowymi na drzewa:
 ![Projekt obudowy w FreeCAD](docs/FreeCAD.png)
 
 ### Demonstracja wideo
