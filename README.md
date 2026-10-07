@@ -1,10 +1,9 @@
 
 # Autonomiczny Stochastyczny Odstraszacz Ptaków
 
+> Autor: Oleksandr Reinskyi
+> 
 ## 1. Opis zasady działania
-
-
-
 **Cel:** W gospodarstwie moich rodziców znajduje się plantacja leszczyny. Jednym z głównych zagrożeń dla orzechów są ptaki. Odstraszacze wykorzystujące pasywny czujnik podczerwieni okazują się nieskuteczne w warunkach sadu, z kolei inne rozwiązania są zbyt drogie. Dlatego właśnie powstał ten projekt. Opracowane urządzenie dąży do eliminacji zjawiska przyzwyczajania się szkodników do powtarzalnego dźwięku dzięki zastosowaniu sygnałów generowanych losowo.
 
 System składa się z trzech głównych modułów:
