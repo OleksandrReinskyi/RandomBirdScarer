@@ -41,3 +41,27 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+
+# KiCad temporary & backup
+*.kicad_prl
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-save.kicad_sch
+*-save.kicad_pcb
+*.bak
+*_autosave-*
+*.lck
+fp-info-cache
+_restore_backup_*/
+
+# History
+.history/
+history/
+
+# SPICE & ngspice outputs (>100MB)
+*.raw
+*.op.raw
+*.out
+*.log
+circbyline
